@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="575ee626-2cf9-410b-a13b-b3d8c1cce9c0">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT
+     *
+FROM
+       time_table]]>
+	</queryString>
+	<field name="ID" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Subject" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="LName" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Day" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Time" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Email" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement x="114" y="13" width="309" height="53" uuid="2774c8f9-2c90-43a2-b55a-7bc854f70dca"/>
+				<textElement>
+					<font size="36"/>
+				</textElement>
+				<text><![CDATA[Time Table Report]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch">
+			<staticText>
+				<reportElement x="14" y="22" width="35" height="20" uuid="5935cb19-d751-42f2-afff-026bffcb149c"/>
+				<text><![CDATA[ID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="73" y="22" width="100" height="20" uuid="bf6a560c-a610-4661-9e3e-d50e4e11aed5"/>
+				<text><![CDATA[Subject]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="158" y="22" width="100" height="20" uuid="9c934f3e-d0ad-49df-9480-f941ae341e18"/>
+				<text><![CDATA[Lec Name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="297" y="22" width="80" height="20" uuid="1045e185-15ec-4bd0-8f31-ba03d29cfaea"/>
+				<text><![CDATA[Time]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="392" y="22" width="75" height="20" uuid="22f4f953-7c82-4874-bf6f-bbf07127fab9"/>
+				<text><![CDATA[Day]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="467" y="22" width="66" height="20" uuid="5bae4923-d60f-4906-bd37-99f75e151fe9"/>
+				<text><![CDATA[Email]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="125" splitType="Stretch">
+			<textField>
+				<reportElement x="14" y="33" width="35" height="20" uuid="b89dea5e-a9f4-4c2f-bea3-0c7a11c5073d"/>
+				<textFieldExpression><![CDATA[$F{ID}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="73" y="33" width="100" height="20" uuid="ba69d609-4827-412d-ac7d-03e474155fc4"/>
+				<textFieldExpression><![CDATA[$F{Subject}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="158" y="33" width="100" height="20" uuid="f6341f7c-01c9-4289-8c4e-af0d00008630"/>
+				<textFieldExpression><![CDATA[$F{LName}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="297" y="33" width="80" height="20" uuid="8de277be-bd71-4fa8-9dba-932267e800b0"/>
+				<textFieldExpression><![CDATA[$F{Day}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="392" y="33" width="75" height="20" uuid="9a39c155-8dca-4da7-b9bd-d1af46a9f97e"/>
+				<textFieldExpression><![CDATA[$F{Time}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="467" y="33" width="100" height="20" uuid="d3721f76-5625-4a88-ba33-7bd6117af6bf"/>
+				<textFieldExpression><![CDATA[$F{Email}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
